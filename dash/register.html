@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- Mirrored from stacksthemes.com/modern/admin1/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2019 08:27:10 GMT -->
+<head>
+        
+        <!-- Title -->
+        <title>Modern | Login - Sign in</title>
+        
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Admin Dashboard Template" />
+        <meta name="keywords" content="admin,dashboard" />
+        <meta name="author" content="Steelcoders" />
+        
+        <!-- Styles -->
+       
+        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        
+        
+        <script src="assets/plugins/3d-bold-navigation/js/modernizr.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/snap.svg-min.js"></script>
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style type="text/css">
+            label{
+                color:#620759;
+            }
+             input , button{
+                border-radius: 5px !important;
+                height: 40px !important;
+            }
+        </style>
+       
+    </head>
+    <body  id="okay" style="background-color: #620759;margin-top:65px; margin-left: 40px; margin-right: 40px; margin-bottom: 10px;">
+
+<div class="container" >
+    <div class="row">
+    <div class="col-md-4"></div>
+        <div class="col-md-4" style="background-color: white; border-radius: 12px;" >
+
+<h3 align="center" style="color: #620759;">Create an account</h3><br>
+  <form role="form"  onsubmit="return GEEKFORGEEKS()" name="RegForm" >
+  <div class="form-group">
+    <label for="first name" style="color: red" id="first"></label>
+    <input type="text" class="form-control" id="email" placeholder="First Name" name="firstname">
+  </div>
+  <div class="form-group">
+    <label for="first name" style="color: red" id="last"></label>
+    <input type="text" class="form-control" id="pwd" placeholder="Last Name" name="lastname">
+  </div>
+   <div class="form-group">
+    <label for="first name" style="color: red" id="demo"></label>
+        <label for="first name" style="color: red" id="demos"></label>
+            <label for="first name" style="color: red" id="demoss"></label>
+
+    <input type="email" class="form-control"  placeholder="Email" name="email" required="">
+  </div>
+   <div class="form-group">
+    <label for="first name" style="color: red" id="pass"></label>
+    <input type="password" class="form-control" id="pwd" placeholder="Password" name="password">
+  </div>
+   <div class="form-group">
+    <label for="first name" style="color: red" id="firm"></label>
+    <input type="password" class="form-control" id="pwd" placeholder="Confirm Password" name="confirm">
+  </div>
+  <br>
+
+  <button type="submit" class="btn btn- form-control" style="background-color: #620759;color: white">Signup</button><br><br><hr>
+ <h5 align="center"> Already a member?<a href="login.html"> Login here</a></h5>
+
+
+</form>
+    
+        </div>
+           <div class="col-md-4"></div>
+ 
+
+
+    </div>
+</div>
+
+
+
+       
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/plugins/pace-master/pace.min.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+        <script src="assets/plugins/uniform/jquery.uniform.min.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/classie.js"></script>
+        <script src="assets/plugins/waves/waves.min.js"></script>
+        <script src="assets/js/modern.min.js"></script>
+
+
+        <script> 
+function GEEKFORGEEKS()                                    
+{ 
+    var name = document.forms["RegForm"]["firstname"];               
+    var lastname = document.forms["RegForm"]["lastname"];    
+    var email = document.forms["RegForm"]["email"];  
+    var password =  document.forms["RegForm"]["password"];  
+    var confirm = document.forms["RegForm"]["confirm"];  
+
+  
+    if (name.value == "")                                  
+    { 
+      document.getElementById("first").innerHTML = "Enter your firstname";
+         
+        name.focus(); 
+        return false; 
+    } 
+   
+    if (lastname.value == "")                               
+    { 
+      document.getElementById("last").innerHTML = "Enter your Last Name";
+        lastname.focus(); 
+        return false; 
+    } 
+       
+   /* if (email.value == "")                                   
+    { 
+      document.getElementById("demo").innerHTML = "enter your email";
+        email.focus(); 
+        return false; 
+    } 
+   
+   if (email.value.indexOf("@", 0) < 0)                 
+    { 
+      document.getElementById("demos").innerHTML = "Not real";
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+      document.getElementById("demoss").innerHTML = "Not real";
+        email.focus(); 
+        return false; 
+    } */
+   
+    if (password.value == "")                           
+    { 
+      document.getElementById("pass").innerHTML = "Enter Password";
+        password.focus(); 
+        return false; 
+    } 
+   
+    if (confirm.value == "")                        
+    { 
+      document.getElementById("firm").innerHTML = "Confirm Password";
+        confirm.focus(); 
+        return false; 
+    } 
+   
+   // // if (what.selectedIndex < 1)                  
+   //  { 
+   //      alert("Please enter your course."); 
+   //      what.focus(); 
+   //      return false; 
+   //  } 
+   
+    return true; 
+}</script>
+        
+    </body>
+
+
+<!-- Mirrored from stacksthemes.com/modern/admin1/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Mar 2019 08:27:10 GMT -->
+</html>
+
